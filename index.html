@@ -2,7 +2,7 @@
   <head>
     <title>Overwatch Armory</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- 1. Load libraries -->
     <!-- IE required polyfill -->
@@ -10,6 +10,8 @@
 
     <script src="node_modules/zone.js/dist/zone.js"></script>
     <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 
     <script src="node_modules/rxjs/bundles/Rx.umd.js"></script>
     <script src="node_modules/@angular/core/core.umd.js"></script>
@@ -21,12 +23,25 @@
     <!-- 2. Load our 'modules' -->
     <script src='app/app.component.js'></script>
     <script src='app/main.js'></script>
+    <script src='js/script.js'></script>
 
   </head>
 
   <!-- 3. Display the application -->
   <body>
-    <my-app>Loading...</my-app>
+  	<div id="banner">
+	  	<ul class ="navbar">
+		  <li class="active"><a href="#home">Overwatch Armory</a></li>
+		  <li><a href="#search">Search</a></li>
+		  <li><a href="#heroes">Heroes</a></li>
+		  <li><a href="#twitch">Twitch</a></li>
+		  <li><a href="#esports">eSports</a></li>
+		  </li>
+		</ul>
+	    <my-app>Loading...</my-app>
+    
+    
+    </div>
   </body>
 
 </html>
