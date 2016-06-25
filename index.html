@@ -20,27 +20,40 @@
     <script src="node_modules/@angular/platform-browser/platform-browser.umd.js"></script>
     <script src="node_modules/@angular/platform-browser-dynamic/platform-browser-dynamic.umd.js"></script>
 
+    <script src="https://www.gstatic.com/firebasejs/3.0.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.0.5/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.0.5/firebase-storage.js"></script>
+
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyA1dzEBG2wFlyciT8p_6H4OfSkudg7uCTA",
+        authDomain: "overwatch-armory-7fd29.firebaseapp.com",
+        databaseURL: "https://overwatch-armory-7fd29.firebaseio.com",
+        storageBucket: "overwatch-armory-7fd29.appspot.com",
+      };
+      firebase.initializeApp(config);
+    </script>
+
     <!-- 2. Load our 'modules' -->
     <script src='app/app.component.js'></script>
     <script src='app/main.js'></script>
+    <script type="text/javascript" src="js/requests.js"></script>
     <script src='js/script.js'></script>
-
   </head>
 
   <!-- 3. Display the application -->
   <body>
   	<div id="banner">
 	  	<ul class ="navbar">
-		  <li class="active"><a href="#home">Overwatch Armory</a></li>
-		  <li><a href="#search">Search</a></li>
-		  <li><a href="#heroes">Heroes</a></li>
-		  <li><a href="#twitch">Twitch</a></li>
-		  <li><a href="#esports">eSports</a></li>
-		  </li>
-		</ul>
+  		  <li class="active"><a href="#home">Overwatch Armory</a></li>
+  		  <li><a href="#search">Search</a></li>
+  		  <li><a href="#heroes">Heroes</a></li>
+  		  <li><a href="#twitch">Twitch</a></li>
+  		  <li><a href="#esports">eSports</a></li>
+  		  </li>
+		  </ul>
 	    <my-app>Loading...</my-app>
-    
-    
     </div>
   </body>
 
