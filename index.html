@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/3.0.5/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/3.0.5/firebase-database.js"></script>
@@ -25,11 +25,12 @@
     <!-- 2. Load our 'modules' -->
     <script type="text/javascript" src="js/hero.js"></script>
     <script type="text/javascript" src="js/requests.js"></script>
+    <script type="text/javascript" src="js/heroController.js"></script>
     <script src='js/script.js'></script>
   </head>
 
   <!-- 3. Display the application -->
-  <body>
+  <body ng-app="Heroes">
   	<div id="banner">
 	  	<ul class ="navbar">
   		  <li class="active"><a href="#home">Overwatch Armory</a></li>
@@ -40,5 +41,16 @@
   		  </li>
 		  </ul>
     </div>
+
+    <div ng-controller="HeroesController">
+  {{ heroes }}
+      <div>
+        <img src=""/>
+      </div>
+
+      
+
+  </div>
+
   </body>
 </html>
