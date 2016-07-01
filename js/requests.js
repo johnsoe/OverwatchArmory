@@ -7,7 +7,7 @@ var getAllHeroes = function(callback) {
 (function() {
 
 	var getImage = function(img, callback) {
-		firebase.storage().child("portraits/" + img).getDownloadUrl().then(function(url) {
+		firebase.storage().ref().child("portraits/" + img).getDownloadUrl().then(function(url) {
 			callback(url);
 		}).catch(function(error) {
 			console.log(error);
