@@ -47,7 +47,17 @@
       <div>
         <img src=""/>
       </div>
-  </div>
+      <ul class="portrait-pictures">
+        <li class="portraits" ng-repeat="hero in heroes">
+          {{hero.name}} {{hero.portrait}} {{hero.type}}
+        </li>
+        <li class="urls" ng-repeat="url in downloadUrls">
+          <img src="{{url}}">
+        </li>
+
+      </ul>
+
+    </div>
 
   </body>
 </html>
