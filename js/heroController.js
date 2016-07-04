@@ -8,6 +8,8 @@ Heroes.controller('HeroesController', ['$scope', function($scope) {
 		jsonHeroes.forEach(function(jsonHero) {
 			var hero = new Hero();
 			hero.name = jsonHero.name;
+			if(hero.name == "soldier-76")
+					hero.name = "solider-76";
 			hero.portrait = hero.name + "_portrait.png";
 			hero.type = jsonHero.type;
 			$scope.heroes.push(hero);
@@ -23,6 +25,7 @@ Heroes.controller('HeroesController', ['$scope', function($scope) {
 				$scope.downloadUrls[hero.name] = downloadUrl;
 			});
 		});
-		$scope.apply();
+		console.log($scope.downloadUrls);
+		$scope.$apply();
 	}
 }]);
