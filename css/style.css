@@ -36,3 +36,31 @@ li a:hover {
     transition:.3s;
 }
 
+li.portraits {
+    
+}
+
+.portrait-pictures li {
+    display: inline-block;
+}
+
+.portrait-pictures img {
+    height: 150px;
+    width: : 150px;
+}
+
+.portrait-pictures img:hover {
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+
+.portrait {
+    text-align: center;
+}
+
+.portrait p {
+    text-transform: uppercase;
+    font-size: 75%;
+    font-family: Futura,century gothic,arial,sans-serif;
+}

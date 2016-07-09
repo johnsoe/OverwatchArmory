@@ -43,16 +43,16 @@
     </div>
 
     <div ng-controller="HeroesController">
-      {{ heroes }}
-      <div>
-        <img src=""/>
-      </div>
-      <ul class="portrait-pictures">
-        <li class="portraits" ng-repeat="hero in heroes">
-          {{hero.name}} {{hero.portrait}} {{hero.type}}
-          <img src="{{downloadUrls[hero.name]}}"/>
-        </li>
-      </ul>
+        <ul class="portrait-pictures">
+          <li ng-repeat="hero in heroes">
+            <div class="portrait">
+              <a href="#{{hero.name}}">
+                  <img src="{{downloadUrls[hero.name]}}"/>
+              </a>
+              <p>{{hero.name}}</p>
+            </div>
+          </li>
+        </ul>
     </div>
   </body>
 </html>
