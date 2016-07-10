@@ -1,7 +1,7 @@
 #banner {
   background-image: url("../images/owarmorybanner.jpg");
   width:100%;
-  min-height: 347px;
+  min-height: 275px;
 }
 
 ul {
@@ -45,8 +45,8 @@ li.portraits {
 }
 
 .portrait-pictures img {
-    height: 150px;
-    width: : 150px;
+    height: auto;
+    width: 75px;
 }
 
 .portrait-pictures img:hover {
@@ -63,4 +63,9 @@ li.portraits {
     text-transform: uppercase;
     font-size: 75%;
     font-family: Futura,century gothic,arial,sans-serif;
+}
+
+#bodybg {
+    background-image: url("../images/owarmorybody.jpg");
+    width:100%;
 }
