@@ -1,3 +1,8 @@
+body {
+    font-family: Futura,century gothic,arial,sans-serif;
+    margin: 0px;
+}
+
 #banner {
   background-image: url("../images/owarmorybanner.jpg");
   width:100%;
@@ -9,8 +14,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: hsla();
-  }
+}
 
 li.active a {
     color: white;
@@ -45,8 +49,8 @@ li.portraits {
 }
 
 .portrait-pictures img {
-    height: auto;
-    width: 75px;
+    height: 175px;
+    width: 100px;
 }
 
 .portrait-pictures img:hover {
@@ -62,7 +66,6 @@ li.portraits {
 .portrait p {
     text-transform: uppercase;
     font-size: 75%;
-    font-family: Futura,century gothic,arial,sans-serif;
 }
 
 #bodybg {

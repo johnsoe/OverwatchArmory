@@ -40,12 +40,11 @@
   		  </li>
 		  </ul>
     </div>
-
     <div id="bodybg" ng-controller="HeroesController">
         <ul class="portrait-pictures">
           <li ng-repeat="hero in heroes">
             <div class="portrait">
-              <a href="#{{hero.name}}">
+              <a href="/herospotlight.html?hero={{hero.name}}">
                   <img src="{{downloadUrls[hero.name]}}"/>
               </a>
               <p>{{hero.name}}</p>
