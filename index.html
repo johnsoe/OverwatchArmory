@@ -35,24 +35,22 @@
 	  	<ul class ="navbar">
   		  <li class="active"><a href="#home">Overwatch Armory</a></li>
   		  <li><a href="#search">Search</a></li>
-  		  <li><a href="#heroes">Heroes</a></li>
   		  <li><a href="#twitch">Twitch</a></li>
   		  <li><a href="#esports">eSports</a></li>
   		  </li>
 		  </ul>
     </div>
-
     <div ng-controller="HeroesController">
-        <ul class="portrait-pictures">
-          <li ng-repeat="hero in heroes">
-            <div class="portrait">
-              <a href="#{{hero.name}}">
-                  <img src="{{downloadUrls[hero.name]}}"/>
-              </a>
-              <p>{{hero.name}}</p>
-            </div>
-          </li>
-        </ul>
+      <ul class="portrait-pictures">
+        <li ng-repeat="hero in heroes">
+          <div class="portrait">
+            <a href="herospotlight.html?hero={{hero.name}}">
+                <img src="{{downloadUrls[hero.name]}}"/>
+            </a>
+            <p>{{hero.name}}</p>
+          </div>
+        </li>
+      </ul>
     </div>
   </body>
 </html>

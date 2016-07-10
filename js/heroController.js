@@ -7,9 +7,7 @@ Heroes.controller('HeroesController', ['$scope', function($scope) {
 	requests.getAllHeroes(function(jsonHeroes) {
 		jsonHeroes.forEach(function(jsonHero) {
 			var hero = new Hero();
-			hero.name = jsonHero.name;
-			if(hero.name == "soldier-76")
-					hero.name = "solider-76";
+			hero.name = jsonHero.name;					
 			hero.portrait = hero.name + "_portrait.png";
 			hero.type = jsonHero.type;
 			$scope.heroes.push(hero);
